@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myCoinStat", "myCoinStat\myCoinStat.csproj", "{1744D4BC-755B-497C-95DC-465B858C2B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myCoinStat.Tests", "myCoinStat.Tests\myCoinStat.Tests.csproj", "{948DB93A-8AE5-4697-848F-99EE33A33FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1744D4BC-755B-497C-95DC-465B858C2B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1744D4BC-755B-497C-95DC-465B858C2B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1744D4BC-755B-497C-95DC-465B858C2B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1744D4BC-755B-497C-95DC-465B858C2B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948DB93A-8AE5-4697-848F-99EE33A33FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948DB93A-8AE5-4697-848F-99EE33A33FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948DB93A-8AE5-4697-848F-99EE33A33FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948DB93A-8AE5-4697-848F-99EE33A33FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
