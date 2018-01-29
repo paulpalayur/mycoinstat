@@ -10,6 +10,6 @@ namespace myCoinStat.DAL.Models
         public int ID { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<CoinInExchange> CoinInExchanges { get; set; }
+        public virtual ICollection<Coin> CoinInExchanges { get; set; }
     }
 }

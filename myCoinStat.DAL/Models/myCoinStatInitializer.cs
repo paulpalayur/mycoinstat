@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-using myCoinStat.Models;
 
-namespace myCoinStat.DAL
+namespace myCoinStat.DAL.Models
 {
     public class myCoinStatInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<myCoinStatContext>
     {

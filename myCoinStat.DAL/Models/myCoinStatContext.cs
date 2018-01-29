@@ -1,12 +1,12 @@
-﻿using myCoinStat.Models;
+﻿using System.Configuration;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace myCoinStat.DAL
+namespace myCoinStat.DAL.Models
 {
     public class myCoinStatContext : DbContext
     {
-        public myCoinStatContext() : base("myCoinStatContext")
+        public myCoinStatContext() : base(@"Data Source =.\SQLExpress; Initial Catalog = myCoinStatDB; Integrated Security = True; Pooling=False")
         {
         }
 
@@ -17,6 +17,7 @@ namespace myCoinStat.DAL
         public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<PortfolioOrder> PortfolioOrders { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<UserPortfolio> UserPortfolios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -25,13 +26,13 @@ namespace myCoinStat.DAL
             ////.HasRequired(c => c.ExchangeID)
             //.
             //.WillCascadeOnDelete(false);
-            modelBuilder.Entity<PortfolioOrder>().HasRequired(c => c.Protfolio).WithMany().WillCascadeOnDelete(false);
-            modelBuilder.Entity<PortfolioOrder>().HasRequired(c => c.OrderBook).WithMany().WillCascadeOnDelete(false);
+            //modelBuilder.Entity<PortfolioOrder>().HasRequired(c => c.Protfolio).WithMany().WillCascadeOnDelete(false);
+            //modelBuilder.Entity<PortfolioOrder>().HasRequired(c => c.OrderBook).WithMany().WillCascadeOnDelete(false);
             modelBuilder.Entity<Portfolio>().HasRequired(c => c.Exchange).WithMany().WillCascadeOnDelete(false);
             modelBuilder.Entity<Portfolio>().HasRequired(c => c.User).WithMany().WillCascadeOnDelete(false);
-            //modelBuilder.Entity<User>().HasRequired(c => c.UserPortfolios).WithMany().WillCascadeOnDelete(false);
-            modelBuilder.Entity<UserPortfolio>().HasRequired(c => c.User).WithMany().WillCascadeOnDelete(false);
-            modelBuilder.Entity<UserPortfolio>().HasRequired(c => c.Portfolio).WithMany().WillCascadeOnDelete(false);
+            //modelBuilder.Entity<User>().HasRequired(c => c.UserPortfolios).WithMany().WillCascadeOnDelete(true);
+            //modelBuilder.Entity<UserPortfolio>().HasRequired(c => c.User).WithMany().WillCascadeOnDelete(false);
+            //modelBuilder.Entity<UserPortfolio>().HasRequired(c => c.Portfolio).WithMany().WillCascadeOnDelete(false);
         }
     }
 }

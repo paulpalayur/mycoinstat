@@ -13,6 +13,6 @@ namespace myCoinStat.Models
         public string EmailId { get; set; }
         public string Password { get; set; }
 
-        public virtual ICollection<Portfolio> Portfolios { get; set; }
+        public virtual ICollection<UserPortfolio> UserPortfolios { get; set; }
     }
 }
