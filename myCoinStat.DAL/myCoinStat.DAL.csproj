@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>myCoinStat.DAL</RootNamespace>
     <AssemblyName>myCoinStat.DAL</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,7 +41,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +55,13 @@
     <Compile Include="Models\Coin.cs" />
     <Compile Include="Models\CoinInExchange.cs" />
     <Compile Include="Models\Exchange.cs" />
+    <Compile Include="Models\myCoinStatContext.cs" />
+    <Compile Include="Models\myCoinStatInitializer.cs" />
     <Compile Include="Models\OrderBook.cs" />
     <Compile Include="Models\Portfolio.cs" />
     <Compile Include="Models\PortfolioOrder.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserPortfolio.cs" />
     <Compile Include="myCoinStatContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
