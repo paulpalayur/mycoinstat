@@ -62,11 +62,12 @@
     <Compile Include="Models\PortfolioOrder.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserPortfolio.cs" />
-    <Compile Include="myCoinStatContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

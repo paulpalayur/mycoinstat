@@ -19,6 +19,6 @@ namespace myCoinStat.DAL.Models
         public virtual CoinInExchange CoinInExchange { get; set; }
         public virtual User User { get; set; }
         public virtual Portfolio Portfolio { get; set; }
-        public virtual ICollection<PortfolioOrder> PortfolioOrder { get; set; }
+        public virtual ICollection<PortfolioOrder> PortfolioOrders { get; set; }
     }
 }
