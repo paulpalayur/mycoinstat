@@ -9,14 +9,10 @@ namespace myCoinStat.DAL.Models
     public class UserPortfolio
     {
         public int ID { get; set; }
-
-        [ForeignKey("Portfolio"),DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int PortfolioID { get; set; }
-
-        //[ForeignKey("User"), DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public string PortfolioName { get; set; }
         public int UserID { get; set; }
-
-        public virtual Portfolio Portfolio { get; set; }
+                
         public virtual User User { get; set; }
+        public virtual ICollection<OrderBook> OrdersBook { get; set; }
     }
 }

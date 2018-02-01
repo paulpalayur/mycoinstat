@@ -5,7 +5,7 @@ using System.Web;
 
 namespace myCoinStat.DAL.Models
 {
-    public class Portfolio
+    class Portfolio_DoNotUse
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -14,6 +14,6 @@ namespace myCoinStat.DAL.Models
 
         public virtual User User { get; set; }
         public virtual Exchange Exchange { get; set; }
-        public virtual ICollection<PortfolioOrder> PortfolioOrders { get; set; }
+        //public virtual ICollection<PortfolioOrder> PortfolioOrders { get; set; }
     }
 }

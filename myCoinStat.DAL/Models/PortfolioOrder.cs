@@ -6,7 +6,7 @@ using System.Web;
 
 namespace myCoinStat.DAL.Models
 {
-    public class PortfolioOrder
+    class PortfolioOrder_DoNotUse
     {
         public int ID { get; set; }
 
@@ -16,7 +16,7 @@ namespace myCoinStat.DAL.Models
         //[ForeignKey("OrderBook"), DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int OrderBookID { get; set; }
 
-        public virtual Portfolio Protfolio { get; set; }
+        //public virtual Portfolio Protfolio { get; set; }
         public virtual OrderBook OrderBook { get; set; }
     }
 }
