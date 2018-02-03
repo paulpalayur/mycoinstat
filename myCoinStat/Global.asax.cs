@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using myCoinStat.DAL.Models;
+using myCoinStat.DAL.Context;
 
 namespace myCoinStat
 {
@@ -18,9 +19,7 @@ namespace myCoinStat
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            //Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseAlways<myCoinStatContext>());
-            System.Data.Entity.Database.SetInitializer(new DropCreateDatabaseIfModelChanges<myCoinStatContext>());
-            
+            Database.SetInitializer(new myCoinStatInitializer());
             using (var context = new myCoinStatContext())
             {
                 context.Database.Initialize(force: true);

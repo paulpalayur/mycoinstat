@@ -52,11 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\ImyCoinStatContext.cs" />
     <Compile Include="Models\Coin.cs" />
     <Compile Include="Models\CoinInExchange.cs" />
     <Compile Include="Models\Exchange.cs" />
-    <Compile Include="Models\myCoinStatContext.cs" />
-    <Compile Include="Models\myCoinStatInitializer.cs" />
+    <Compile Include="Context\myCoinStatContext.cs" />
+    <Compile Include="Context\myCoinStatInitializer.cs" />
     <Compile Include="Models\OrderBook.cs" />
     <Compile Include="Models\Portfolio.cs" />
     <Compile Include="Models\PortfolioOrder.cs" />

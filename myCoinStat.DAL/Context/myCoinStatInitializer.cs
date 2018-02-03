@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
+using myCoinStat.DAL.Models;
 
-namespace myCoinStat.DAL.Models
+namespace myCoinStat.DAL.Context
 {
-    public class myCoinStatInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<myCoinStatContext>
+    public class myCoinStatInitializer : DropCreateDatabaseIfModelChanges<myCoinStatContext>
     {
         protected override void Seed(myCoinStatContext context)
-        {
-            //context.Users.Add(new User { FirstName = "Paul", LastName = "Palayur", Password = "Password01", EmailId = "paulpalayur@gmail.com" });
-
+        {            
             var users = new List<User>
             {
                 new User { FirstName = "Paul", LastName = "Palayur", Password = "Password01", EmailId = "paulpalayur@gmail.com" },
@@ -20,7 +19,6 @@ namespace myCoinStat.DAL.Models
 
             users.ForEach(u => context.Users.Add(u));
             context.SaveChanges();
-
         }
     }
 }
