@@ -9,7 +9,6 @@ namespace myCoinStat.DAL
     {
         public int ID { get; set; }
         public int CoinInExchangeID { get; set; }
-        public int UserID { get; set; }
         public int UserPortfolioID { get; set; }
         public decimal Quantity { get; set; }
         public decimal CoinPrice { get; set; }
@@ -17,7 +16,6 @@ namespace myCoinStat.DAL
         public DateTime TransactionDate { get; set; }
 
         public virtual CoinInExchange CoinInExchange { get; set; }
-        public virtual User User { get; set; }
         public virtual UserPortfolio UserPortfolio { get; set; }
     }
 }
