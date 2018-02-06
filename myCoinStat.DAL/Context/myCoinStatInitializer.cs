@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace myCoinStat.DAL
 {
-    public class myCoinStatInitializer : DropCreateDatabaseIfModelChanges<myCoinStatContext>
+    public class myCoinStatInitializer : DropCreateDatabaseAlways<myCoinStatContext>
     {
         protected override void Seed(myCoinStatContext context)
         {            
