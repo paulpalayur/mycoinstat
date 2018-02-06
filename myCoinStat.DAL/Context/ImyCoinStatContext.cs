@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using myCoinStat.DAL.Models;
 
-namespace myCoinStat.DAL.Context
+
+namespace myCoinStat.DAL
 {
     interface ImyCoinStatContext : IDisposable
     {

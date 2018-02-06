@@ -64,6 +64,22 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserPortfolio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Impl\CoinInExchangeRepository.cs" />
+    <Compile Include="Repositories\Impl\CoinRepository.cs" />
+    <Compile Include="Repositories\Impl\ExchangeRepository.cs" />
+    <Compile Include="Repositories\Impl\OrderBookRepository.cs" />
+    <Compile Include="Repositories\Impl\Repository.cs" />
+    <Compile Include="Repositories\Impl\UnitOfWork.cs" />
+    <Compile Include="Repositories\Impl\UserPortfolioRepository.cs" />
+    <Compile Include="Repositories\Impl\UserRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoinInExchangeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoinRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IExchangeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IOrderBookRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Repositories\Interfaces\IUserPortfolioRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IUserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -71,6 +87,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

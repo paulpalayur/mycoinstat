@@ -1,9 +1,9 @@
 ﻿using System.Configuration;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using myCoinStat.DAL.Models;
 
-namespace myCoinStat.DAL.Context
+
+namespace myCoinStat.DAL
 {
     public class myCoinStatContext : DbContext, ImyCoinStatContext
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace myCoinStat.DAL.Models
+namespace myCoinStat.DAL
 {
     public class UserPortfolio
     {
