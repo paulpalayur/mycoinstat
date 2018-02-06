@@ -12,6 +12,12 @@ namespace myCoinStat.DAL
         public UnitOfWork(myCoinStatContext context)
         {
             _context = context;
+            Coins = new CoinRepository(_context);
+            CoinsInExchanges = new CoinInExchangeRepository(_context);
+            Exchanges = new ExchangeRepository(_context);
+            OrdersBook = new OrderBookRepository(_context);
+            UserPortfolios = new UserPortfolioRepository(_context);
+            Users = new UserRepository(_context);
         }
 
         public ICoinRepository Coins{ get; }
